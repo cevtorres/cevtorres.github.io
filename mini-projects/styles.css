@@ -1,0 +1,49 @@
+
+body {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+    background-color: rgb(133, 73, 178);
+    color: white;
+}
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.form {
+    text-align: center;
+}
+.result {
+    text-align: center;
+    font-size: 30px;
+    margin: 30px;
+}
+.result:hover {
+    color: chartreuse;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.image {
+    max-width: 600px;
+    border: 1px solid #FFF; 
+    border-radius: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.99);
+}
+
+.blur {filter: blur(4px);}
+.brightness {filter: brightness(250%);}
+.contrast {filter: contrast(180%);}
+.grayscale {filter: grayscale(100%);}
+.huerotate {filter: hue-rotate(180deg);}
+.invert {filter: invert(100%);}
+.opacity {filter: opacity(50%);}
+.saturate {filter: saturate(7);}
+.sepia {filter: sepia(100%);}
+.shadow {filter: drop-shadow(8px 8px 10px green);}
