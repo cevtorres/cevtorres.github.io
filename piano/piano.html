@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        .pianoText {
+            position: absolute;
+            bottom: 5px;
+            left: 14px;
+        }
+        .pianoKey {
+            height: 200px;
+            width: 40px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-4">
+        <header class="pb-3 mb-4 border-bottom">
+            <a href="#" class="d-flex align-items-center text-body-emphasis text-decoration-none">
+                <span class="fs-4">Piano</span>
+              </a>
+        </header>
+        <div class="text-center">
+            <button class="btn btn-outline-dark pianoKey" id="cKey" onclick="play('C')">
+                <span class="pianoText">C</span>
+            </button>
+            <button class="btn btn-outline-dark pianoKey" id="dKey" onclick="play('D')">
+                <span class="pianoText">D</span>
+            </button>
+            <button class="btn btn-outline-dark pianoKey" id="eKey" onclick="play('E')">
+                <span class="pianoText">E</span>
+            </button>
+            <button class="btn btn-outline-dark pianoKey" id="fKey" onclick="play('F')">
+                <span class="pianoText">F</span>
+            </button>
+            <button class="btn btn-outline-dark pianoKey" id="gKey" onclick="play('G')">
+                <span class="pianoText">G</span>
+            </button>
+            <button class="btn btn-outline-dark pianoKey" id="aKey" onclick="play('A')">
+                <span class="pianoText">A</span>
+            </button>
+            <button class="btn btn-outline-dark pianoKey" id="bKey" onclick="play('B')">
+                <span class="pianoText">B</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="piano.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
