@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body> 
+  <div class="container-fluid">
+    <div class="d-flex align-items-center justify-content-center" style="height: 100vh;">
+        <div>
+            <div style="width: 600px" class="btn-group col-md-6 btn-group-sm" role="group" aria-label="Basic outlined example">
+                <button type="button" onclick="setMinutes(20)" class="btn btn-outline-primary">pomodoro</button>
+                <button type="button" onclick="setMinutes(5)" class="btn btn-outline-primary">short break</button>
+                <button type="button" onclick="setMinutes(10)" class="btn btn-outline-primary">long break</button>
+            </div>
+            <h1 class="text-center my-5" id="minutes"></h1>
+            <div class="d-flex justify-content-center">
+                <div class="btn-group btn-group-sm" role="group">
+                    <button id="startButton" class="btn btn-success" onclick="start()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                        </svg>
+                    </button>
+                    <button id="stopButton" class="btn btn-danger" onclick="stop()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-stop-fill" viewBox="0 0 16 16">
+                            <path d="M5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5A1.5 1.5 0 0 1 5 3.5z"/>
+                        </svg>
+                    </button>
+                    <button class="btn btn-secondary" onclick="reset()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
+                            <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <script src="timer.js"></script>
+        </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
